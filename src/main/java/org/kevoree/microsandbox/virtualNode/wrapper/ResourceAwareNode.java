@@ -24,8 +24,9 @@ public class ResourceAwareNode extends JavaNode {
     @Start
     public void startNode() {
         super.startNode();
-        Log.info("Node : {} was started", context.getNodeName());
-        System.out.printf("LALALALLALALLALALALLA %s\n", context.getNodeName());
+        Log.info("\tINTI - NodeName: {} was started, Path: {}, InstanceName: {}",
+                context.getNodeName(), context.getPath(), context.getInstanceName());
+        Log.info("\t\t");
     }
 
     @Stop
@@ -35,7 +36,7 @@ public class ResourceAwareNode extends JavaNode {
 
     @Override
     protected WrapperFactory createWrapperFactory(String nodeName) {
-        Log.info("Requesting Wrapper factory to node : {}", context.getNodeName());
+        Log.info("\tINTI - Requesting Wrapper factory to node : {}", context.getNodeName());
         return new ResourceAwareWrapperFactory(nodeName,modelRegistry);
     }
 }
