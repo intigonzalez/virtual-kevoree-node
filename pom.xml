@@ -14,8 +14,8 @@
         <kevoree.version>3.5.4</kevoree.version>
         <kevoree.library.version>3.5.2</kevoree.library.version>-->
         <kotlin.version>0.7.271</kotlin.version>
-        <kevoree.version>3.5.6</kevoree.version>
-        <kevoree.library.version>3.5.3</kevoree.library.version>
+        <kevoree.version>3.6.7</kevoree.version>
+        <kevoree.library.version>3.6.4</kevoree.library.version>
         <kevoree.komponents.version>1.1.0-SNAPSHOT</kevoree.komponents.version>
     </properties>
 
@@ -42,24 +42,9 @@
             <version>${kevoree.version}</version>
         </dependency>
         <dependency>
-            <groupId>org.slf4j</groupId>
-            <artifactId>slf4j-simple</artifactId>
-            <version>1.7.5</version>
-        </dependency>
-        <dependency>
-            <groupId>org.kevoree</groupId>
-            <artifactId>org.kevoree.kevscript</artifactId>
-            <version>${kevoree.version}</version>
-        </dependency>
-        <dependency>
             <groupId>org.kevoree.library.cloud</groupId>
             <artifactId>org.kevoree.library.cloud.api</artifactId>
             <version>${kevoree.library.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.jetbrains.kotlin</groupId>
-            <artifactId>kotlin-stdlib</artifactId>
-            <version>${kotlin.version}</version>
         </dependency>
         <!--<dependency>-->
         <!--<groupId>org.kevoree.komponents</groupId>-->
